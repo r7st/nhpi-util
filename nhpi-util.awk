@@ -67,7 +67,21 @@ function IdentifyFromBuyPrice(Inp){
   GetBuyPrices(int(Cha), Type, Inp)
 }
 
+function IdentifyFromSellPrice(Inp){
+  sub("^s", "", Inp)
+  Type=substr(Inp, 1, 1); sub("^.", "", Inp)
+  ValReg="(^|,)"Inp"(,|$)"
+  for (i=1; i<Prices[Type "SIZE"]; i++){
+    split(Prices[Type i], Vals, ";")
+    Val=Vals[9]; sub("[(]", ",", Val); sub("[)]", "", Val)
+    if (match(Val, ValReg)) {
+      printf("bc%-3s %s\n", Vals[1], Vals[10])
+    }
+  }
+}
+
 BEGIN{ print "Starting nhpi-util..."; ReadPrices() }
 /^q/{ print "Exiting..."; exit }
 /^#/{ next }
 /^b/{ IdentifyFromBuyPrice($0) }
+/^s/{ IdentifyFromSellPrice($0) }
