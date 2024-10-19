@@ -1,0 +1,20 @@
+# nhpi-util
+Nethack Price Identification Utility
+
+Input to price identify in the form of:
+[buy] [charisma level] [type] [price] [sucker]
+[sell] [type] [price]
+or to print items by base cost:
+[value] [type] [base cost]
+
+Valid Types: boots(b), Cloaks(c), Scrolls(s), Potions(p), Rings(r), Wands(w), Spellbooks(k)
+
+[Example Input]
+Buying a spellbook with charisma 14 at price 711 while not being a sucker:
+b14k711
+Buying a potion with charisma 8 at price 237 while being a sucker:
+b8p237s
+Selling a ring at price 150:
+sr150
+List scrolls with a base cost of 100:
+vs100
