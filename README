@@ -13,6 +13,7 @@ q to quit
 
 Valid Types: boots(b), Cloaks(c), Scrolls(s), Potions(p), Rings(r), Wands(w), Spellbooks(k)
 If multiple base costs are possible, they will all be listed
+Suggest naming items something unique containing the base cost such as "bc100,smokey"
 
 [Example Input]
 Buying a spellbook with charisma 14 at price 711 while not being a sucker:
