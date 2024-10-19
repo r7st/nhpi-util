@@ -1,5 +1,6 @@
 # nhpi-util
 Nethack Price Identification Utility
+Ref: https://nethackwiki.com/wiki/Price_identification
 
 Run as "awk -f nhpi-util.awk" (may need to install gawk/nawk depending on your system)
 
