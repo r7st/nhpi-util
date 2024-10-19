@@ -1,0 +1,44 @@
+# BOOTS
+8;16(21/28);12(16/21);11(14/19);8(11/14);6(8/11);5(7/9);4(5/7);4(3);elven boots, kicking boots
+30;60(80/107);45(60/80);40(53/71);30(40/53);23(30/40);20(27/36);15(20/27);15(11);fumble boots, levitation boots
+50;100(133/178);75(100/133);67(89/119);50(67/89);38(50/67);33(44/59);25(33/44);25(19);jumping boots, speed boots, water walking boots
+# CLOAKS
+2;10(13/18);8(10/13);7(9/12);5(7/9);4(5/7);3(4/6);3(3/4);1(1);mummy wrapping
+40;80(107/142);60(80/107);53(71/95);40(53/71);30(40/53);27(36/47);20(27/36);20(15);leather, orcish("coarse mantelet")
+50;100(133/178);75(100/133);67(89/119);50(67/89);38(50/67);33(44/59);25(33/44);25(19);alchemy smock("apron"), displacement, dwarvish("hooded cloak"), oilskin("slippery cloak"), protection, robe("robe")
+60;120(160/213);90(120/160);80(107/142);60(80/107);45(60/80);40(53/71);30(40/53);30(23);elven("faded pall"), invisibility, magic resistance
+# SCROLLS
+20;40(53/71);30(40/53);27(36/47);20(27/36);15(20/27);13(18/24);10(13/18);10(8);identify
+50;100(133/178);75(100/133);67(89/119);50(67/89);38(50/67);33(44/59);25(33/44);25(19);light
+60;120(160/213);90(120/160);80(107/142);60(80/107);45(60/80);40(53/71);30(40/53);30(23);blank paper("unlabeled scroll"), enchant weapon
+80;160(213/284);120(160/213);107(142/190);80(107/142);60(80/107);53(71/95);40(53/71);40(30);enchant armor, remove curse
+100;200(267/356);150(200/267);133(178/237);100(133/178);75(100/133);67(89/119);50(67/89);50(38);confuse monster, destroy armor, fire, food detection, gold detection, magic mapping, scare monster, teleportation
+200;400(533/711);300(400/533);267(356/474);200(267/356);150(200/267);133(178/237);100(133/178);100(75);amnesia, create monster, earth, taming
+300;600(800/1067);450(600/800);400(533/711);300(400/533);225(300/400);200(267/356);150(200/267);150(113);charging, genocide, punishment, stinking cloud
+# POTIONS
+0;10(13/18);8(10/13);7(9/12);5(7/9);4(5/7);3(4/6);3(3/4);0(0);water(uncursed)
+50;100(133/178);75(100/133);67(89/119);50(67/89);38(50/67);33(44/59);25(33/44);25(19);booze, fruit juice, see invisible, sickness
+100;200(267/356);150(200/267);133(178/237);100(133/178);75(100/133);67(89/119);50(67/89);50(38);confusion, extra healing, hallucination, healing, holy water("blessed clear potion"), unholy water("cursed clear potion"), restore ability, sleeping
+150;300(400/533);225(300/400);200(267/356);150(200/267);113(150/200);100(133/178);75(100/133);75(56);blindness, gain energy, invisibility, monster detection, object detection
+200;400(533/711);300(400/533);267(356/474);200(267/356);150(200/267);133(178/237);100(133/178);100(75);enlightenment, full healing, levitation, polymorph, speed
+250;500(667/889);375(500/667);333(444/593);250(333/444);188(250/333);167(222/296);125(167/222);125(94);acid, oil
+300;600(800/1067);450(600/800);400(533/711);300(400/533);225(300/400);200(267/356);150(200/267);150(113);gain ability, gain level, paralysis
+# RINGS
+100;200(267/356);150(200/267);133(178/237);100(133/178);75(100/133);67(89/119);50(67/89);50(38);adornment, hunger*, protection, protection from shape changers, stealth, sustain ability, warning
+150;300(400/533);225(300/400);200(267/356);150(200/267);113(150/200);100(133/178);75(100/133);75(56);aggravate monster*, cold resistance, gain constitution, gain strength, increase accuracy, increase damage, invisibility, poison resistance, see invisible, shock resistance
+200;400(533/711);300(400/533);267(356/474);200(267/356);150(200/267);133(178/237);100(133/178);100(75);fire resistance, free action, levitation, regeneration, searching, slow digestion, teleportation*
+300;600(800/1067);450(600/800);400(533/711);300(400/533);225(300/400);200(267/356);150(200/267);150(113);conflict, polymorph*, polymorph control, teleport control
+# WANDS
+100;200(267/356);150(200/267);133(178/237);100(133/178);75(100/133);67(89/119);50(67/89);50(38);light, nothing
+150;300(400/533);225(300/400);200(267/356);150(200/267);113(150/200);100(133/178);75(100/133);75(56);digging, enlightenment, locking, magic missile, make invisible, opening, probing, secret door detection, slow monster, speed monster, striking, undead turning
+175;350(467/622);263(350/467);233(311/415);175(233/311);131(175/233);117(156/207);88(117/156);88(66);cold, fire, lightning, sleep
+200;400(533/711);300(400/533);267(356/474);200(267/356);150(200/267);133(178/237);100(133/178);100(75);cancellation, create monster, polymorph, teleportation
+500;1000(1333/1778);750(1000/1333);667(889/1185);500(667/889);375(500/667);333(444/593);250(333/444);250(188);death, wishing
+# SPELLBOOKS
+100;200(267/356);150(200/267);133(178/237);100(133/178);75(100/133);67(89/119);50(67/89);50(38);Level 1 books: force bolt, protection, detect monsters, light, sleep, jumping, healing, knock
+200;400(533/711);300(400/533);267(356/474);200(267/356);150(200/267);133(178/237);100(133/178);100(75);Level 2 books: magic missile, drain life, create monster, detect food, confuse monster, slow monster, cure blindness, wizard lock
+300;600(800/1067);450(600/800);400(533/711);300(400/533);225(300/400);200(267/356);150(200/267);150(113);Level 3 books: remove curse, clairvoyance, detect unseen, identify, cause fear, charm monster, haste self, cure sickness, extra healing, stone to flesh
+400;800(1067/1422);600(800/1067);533(711/948);400(533/711);300(400/533);267(356/474);200(267/356);200(150);Level 4 books: cone of cold, fireball, detect treasure, invisibility, levitation, restore ability
+500;1000(1333/1778);750(1000/1333);667(889/1185);500(667/889);375(500/667);333(444/593);250(333/444);250(188);Level 5 books: magic mapping, dig
+600;1200(1600/2133);900(1200/1600);800(1067/1422);600(800/1067);450(600/800);400(533/711);300(400/533);300(225);Level 6 books: create familiar, turn undead, teleport away, polymorph
+700;1400(1867/2489);1050(1400/1867);933(1244/1659);700(933/1244);525(700/933);467(622/830);350(467/622);350(263);Level 7 books: finger of death, cancellation
