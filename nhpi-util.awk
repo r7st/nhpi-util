@@ -1,7 +1,7 @@
 function ReadPrices(){
   Type="null"
   i=1;
-  while(getline < "charts.txt"){
+  while(getline < "charts.csv"){
     if (match($0, "^#[a-z]+")) {
       Type=substr($0, RSTART+1, 1)
       Prices[Type "SIZE"]=1
