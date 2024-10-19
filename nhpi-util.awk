@@ -72,8 +72,18 @@ function IdentifyFromSellPrice(Inp){
   }
 }
 
+function ListByBaseCost(Inp){
+  sub("^v", "", Inp)
+  Type=substr(Inp, 1, 1); sub("^.", "", Inp)
+  for (i=1; i<Prices[Type "SIZE"]; i++){
+    split(Prices[Type i], Vals, ";")
+    if (Vals[1] == Inp) print Vals[10]
+  }
+}
+
 BEGIN{ print "Starting nhpi-util..."; ReadPrices() }
 /^q/{ print "Exiting..."; exit }
 /^#/{ next }
 /^b/{ IdentifyFromBuyPrice($0) }
 /^s/{ IdentifyFromSellPrice($0) }
+/^v/{ ListByBaseCost($0) }
