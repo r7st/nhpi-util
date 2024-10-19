@@ -25,12 +25,6 @@ function GetBuyPrice(Val, Inp){
   return 0
 }
 
-function GetBuyVal(Inp){
-  sub("^[0-9]+;", "", Inp)
-  sub(";[^;]+;[^;]+$", "", Inp)
-  return Inp
-}
-
 function GetChaIndex(Cha){
   if (Cha >= 19) Ind=7
   else if (Cha == 18) Ind=6
@@ -45,9 +39,8 @@ function GetChaIndex(Cha){
 function GetBuyPrices(Cha, Type, Inp){
   ChaInd=GetChaIndex(Cha)
   for (i=1; i<=Prices[Type "SIZE"]; i++){
-    Vals=GetBuyVal(Prices[Type i])
-    split(Vals, LineVal, ";")
-    if (GetBuyPrice(LineVal[ChaInd], Inp)){
+    split(Prices[Type i], LineVal, ";")
+    if (GetBuyPrice(LineVal[ChaInd+1], Inp)){
       match(Prices[Type i], "^[^;]+")
       BaseCost=substr(Prices[Type i], RSTART, RLENGTH)
       match(Prices[Type i], "[^;]+$")
@@ -62,8 +55,7 @@ function IdentifyFromBuyPrice(Inp){
   sub("^b", "", Inp)
   match(Inp, "^[0-9]+"); Cha=substr(Inp, RSTART, RLENGTH)
   sub("^[0-9]+", "", Inp)
-  match(Inp, "^[spbcrwk]"); Type=substr(Inp, RSTART, RLENGTH)
-  sub("^[a-z]", "", Inp)
+  Type=substr(Inp, 1, 1); sub("^.", "", Inp)
   GetBuyPrices(int(Cha), Type, Inp)
 }
 
