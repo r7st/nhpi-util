@@ -1,14 +1,11 @@
 function ReadPrices(){
-  Type="null"
-  i=1;
+  Type="null"; i=1;
   while(getline < "charts.csv"){
     if (match($0, "^#[a-z]+")) {
       Type=substr($0, RSTART+1, 1)
-      Prices[Type "SIZE"]=1
-      i=1
+      i=Prices[Type "SIZE"]=1
       continue
     }
-    sub("# "Type, "", Line)
     Prices[Type i++]=$0
     Prices[Type "SIZE"]++
   }
@@ -26,26 +23,21 @@ function GetBuyPrice(Val, Inp){
 }
 
 function GetChaIndex(Cha){
-  if (Cha >= 19) Ind=7
-  else if (Cha == 18) Ind=6
-  else if (Cha >= 16) Ind=5
-  else if (Cha >= 11) Ind=4
-  else if (Cha >= 8) Ind=3
-  else if (Cha >= 6) Ind=2
-  else Ind=1
-  return Ind
+  if (Cha >= 19) return 7
+  else if (Cha == 18) return 6
+  else if (Cha >= 16) return 5
+  else if (Cha >= 11) return 4
+  else if (Cha >= 8) return 3
+  else if (Cha >= 6) return 2
+  else return 1
 }
 
 function GetBuyPrices(Cha, Type, Inp){
   ChaInd=GetChaIndex(Cha)
-  for (i=1; i<=Prices[Type "SIZE"]; i++){
-    split(Prices[Type i], LineVal, ";")
-    if (GetBuyPrice(LineVal[ChaInd+1], Inp)){
-      match(Prices[Type i], "^[^;]+")
-      BaseCost=substr(Prices[Type i], RSTART, RLENGTH)
-      match(Prices[Type i], "[^;]+$")
-      Items=substr(Prices[Type i], RSTART, RLENGTH)
-      printf("bc%-3s %s\n", BaseCost, Items)
+  for (i=1; i<Prices[Type "SIZE"]; i++){
+    split(Prices[Type i], Vals, ";")
+    if (GetBuyPrice(Vals[ChaInd+1], Inp)){
+      printf("bc%-3s %s\n", Vals[1], Vals[10])
     }
   }
 }
