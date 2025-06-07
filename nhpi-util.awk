@@ -12,7 +12,6 @@ BEGIN{  # parse charts file
 }
 /^q/{ print "Exiting..."; exit }
 /^h/{
-  print ""
   print "**************************************************"
   print "* Input to price identify in the form of:        *"
   print "* [buy] [charisma level] [type] [price] [sucker] *"
@@ -25,7 +24,6 @@ BEGIN{  # parse charts file
   print "* Valid Types: Boots(b), Cloaks(c), Scrolls(s),  *" 
   print "* Potions(p), Rings(r), Wands(w), Spellbooks(k)  *" 
   print "**************************************************"
-  print ""
 }
 /^v/{  # get items by base cost
   Type=substr($0, 2, 1); sub("^..", "", $0)
